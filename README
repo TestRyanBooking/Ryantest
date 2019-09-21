@@ -1,0 +1,34 @@
+1-Test Environment
+
+This section describes software test environment that will be used to verify a booking up to a declined payment on https://www.ryanair.com/ie/en/.
+
+This section covers the following points: Software requirements to set-up and execute the test.
+Software Environment - Operating System, Tools & Application:
+	Linux Ubuntu 16.04 Mozilla 
+	Firefox 69.0 browser 
+	Selenium Webdriver v3.141.59 
+	Eclipse IDE Oxygen.3a  
+	java version "1.8.0_172" 
+	Java(TM) SE Runtime Environment (build 1.8.0_172-b11) Java HotSpot(TM) 64-Bit Server VM (build 25.172-b11, mixed mode) 
+	Apache Maven 3.6.0
+	JUnit 4.12 
+	Hamcrest Library
+	Application https://www.ryanair.com/ie/en/
+
+
+2-How to RUN these TEST
+	a- From CLI	
+		- CLI execution (with maven)
+			rfs@rfs-ubuntu-king:~$ mvn test -f /home/rfs/eclipse-workspace/RyanairTest 
+	b- From Eclipse 
+		- Select RyanairTest project from Package Explorer
+		- Go to "Run As" option
+		- Select JUnit Test or "Maven test"
+
+-------------------------------------------------------------------------------
+Message Error:
+Payment method
+Oh. There was a problem
+As your payment was not authorised we could not complete your reservation. Please ensure that the information was correct or use a new payment to try again
+
+
